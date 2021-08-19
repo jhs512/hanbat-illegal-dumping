@@ -1,0 +1,1019 @@
+/*메인페이지  */
+.main-img {
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+}
+
+.img-container {
+  top: 0px;
+  display: felx;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  height: 845px;
+  background-color: gold;
+  position: fixed;
+  color: #ffffff;
+}
+
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.bg {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /*살짝 투명한 검정으로 배경색*/
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+}
+
+.text-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-box span {
+  font-size: 4rem;
+  color: rgb(226, 226, 226);
+}
+
+.text-box span:first-child {
+  font-size: 7rem;
+  color: rgb(223, 201, 201);
+}
+
+.button-box {
+  margin-left: 40%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+}
+
+.button-box div {
+  top: 0px;
+  width: 50%;
+  height: 90%;
+  position: static;
+  padding-left: 30%;
+}
+
+.button-box div:nth-child(2) {
+  padding: 0;
+}
+
+.button-box div:nth-child(2) img {
+  padding-left: 0;
+  padding-bottom: 10%;
+  width: 45%;
+  height: 65%;
+}
+
+.mobile-main-img {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box span:first-child {
+    font-size: 3rem;
+  }
+  .text-box span:nth-child(2) {
+    font-size: 2rem;
+  }
+  .button-box div {
+    padding-left: 10%;
+  }
+  .button-box div:nth-child(2) img {
+    width: 100%;
+    height: 35%;
+  }
+  .button-box {
+    margin-left: 30%;
+  }
+
+  .logo-box div {
+    width: 40% !important;
+  }
+  .main-img {
+    display: none;
+  }
+  .mobile-main-img {
+    display: block;
+    height: 100%;
+  }
+}
+
+/*메인페이지 끝 */
+
+/* 상단 로고 */
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 12%;
+}
+
+.logo-box div {
+  top: 0px;
+  width: 20%;
+  height: 100%;
+}
+.logo-box div:nth-child(2) {
+  margin-top: 1%;
+  width: 20%;
+  height: 100%;
+}
+
+.logo-box div:nth-child(1) img {
+  padding-top: 10px;
+}
+
+.logo-box div:nth-child(2) img {
+  margin-left: 25%;
+  margin-top: 3%;
+  height: 100%;
+  width: 80%;
+}
+
+.button-content {
+  position: relative;
+}
+
+.button-text {
+  position: absolute !important;
+}
+
+/* 동영상 리스트 페이지 */
+.content-container {
+  display: flex;
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  margin-left: 27%;
+}
+
+.content-box {
+  display: flex;
+  background-color: #faf2da;
+  width: 95%;
+  height: 95%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  border: solid 8px black;
+  border-radius: 10px;
+}
+
+.content {
+  background-color: seagreen;
+  width: 30%;
+  height: 35%;
+  border: solid black;
+}
+
+.content-text {
+  color: #343d34;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.content a {
+  height: 100%;
+  width: 100%;
+}
+
+.content a img {
+  height: 100%;
+  width: 100%;
+}
+
+.content-text {
+  color: #343d34;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.next-button-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.next-button-box div {
+  position: absolute;
+}
+
+.next-button-box div:nth-child(1) {
+  margin-top: 50%;
+  height: 30%;
+  width: 20%;
+}
+
+.next-button-box div:nth-child(1) img {
+  width: 90%;
+  height: 60%;
+}
+
+.next-button-box div:nth-child(2) {
+  height: 100%;
+  margin-top: 50%;
+}
+
+.next-button-box div:nth-child(2) a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.next-button-box div:nth-child(2) a img {
+  margin-top: 13%;
+  margin-left: 94%;
+  height: 25%;
+  width: 100%;
+}
+
+@media (max-width: 820px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10%;
+    width: 90%;
+    height: 50%;
+    width: 90%;
+  }
+  .next-button-box div:nth-child(1) {
+    margin-top: 8%;
+    margin-left: 25%;
+    height: 90%;
+    width: 25%;
+  }
+  .next-button-box {
+    height: 100%;
+    width: 100%;
+  }
+  .next-button-box div:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .next-button-box div:nth-child(2) a img {
+    margin-left: 50%;
+    width: 30%;
+    height: 100%;
+    margin-top: 8%;
+  }
+  .content {
+    width: 40%;
+    height: 23%;
+  }
+  .content-text {
+    height: 40%;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .content-box {
+    width: 80%;
+  }
+  .content-text span {
+    font-size: 1.2rem;
+  }
+  .content-text span:nth-child(1) {
+    margin-bottom: 13%;
+  }
+  .content-text span:nth-child(2) {
+    padding-top: 7%;
+  }
+  .logo-box div:nth-child(2) {
+    margin-top: -3% !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 740px) {
+  .next-button-box div:nth-child(2) a img {
+    width: 30%;
+    height: 80%;
+  }
+}
+
+/* 무단투기 테스트 */
+.form-1 > fieldset {
+  display: none;
+}
+
+.form-1 > fieldset.active {
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  width: 60%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: auto;
+  color: #4a503d;
+  flex-wrap: wrap;
+}
+
+.form-box {
+  margin-top: 2%;
+  width: 70%;
+  margin: 9% 10%;
+  margin-bottom: 4%;
+  height: 70%;
+  background-color: #faf2da;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: solid black 4px;
+  height: 70%;
+}
+
+.form-box-content {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5% 5%;
+  height: 95%;
+  background: #faf2da;
+  height: 95%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button div img {
+  height: 80%;
+  width: 100%;
+}
+
+.button:nth-child(1) div img {
+  padding: 5% 5%;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box > button:nth-child(1) {
+  margin-right: 20px;
+}
+
+.q-text {
+  font-size: 1.6rem;
+}
+
+.a-text {
+  font-size: 1.6rem;
+}
+
+.test-button-box {
+  display: flex;
+  height: 20%;
+  width: 70%;
+  padding: 0% 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-button-box > div {
+  width: 60%;
+  height: 100%;
+}
+
+.button > div {
+  padding-bottom: 70%;
+}
+
+.pre img {
+  padding: 7% 0%;
+}
+
+.qq-text {
+  text-align: center;
+}
+
+.q-title {
+  text-align: none !important;
+}
+
+.result-box {
+  text-align: center;
+}
+
+.result-boxx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-boxx img {
+  width: 100%;
+  height: 100%;
+}
+
+.result-img-box {
+  width: 40%;
+  margin: 3% 0%;
+}
+
+.result-txt {
+  width: 70%;
+  height: 50%;
+  word-wrap: break-word;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 820px) {
+  .test-main-container {
+    width: 70%;
+    margin-top: 18%;
+  }
+  .test-main-img {
+    width: 88%;
+  }
+  .form-container {
+    width: 95%;
+    margin-top: 10%;
+    height: 60%;
+    flex-wrap: wrap;
+  }
+  .q-text {
+    font-size: 1.2rem;
+  }
+  .a-text {
+    font-size: 1.2rem;
+  }
+  .form-box {
+    width: 100%;
+    height: 60%;
+  }
+  .pre {
+    order: 10 !important;
+  }
+  .next {
+    order: 11 !important;
+  }
+  .button div a {
+    height: 70% !important;
+  }
+  .button {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .test-button-box {
+    padding: 0 10%;
+  }
+  .button img {
+    width: 80px;
+    height: 80px;
+  }
+  .pre img {
+    padding: 7% 4%;
+  }
+  .result-img-box {
+    width: 60%;
+  }
+  .result-box {
+    text-align: center;
+    margin-top: 3%;
+  }
+  .result-box label {
+    margin: 3%;
+  }
+  .result-txt {
+    font-size: 0.8rem;
+  }
+}
+
+/* 무단투기 테스트 끝 */
+
+/* 테스트 시작페이지 */
+.test-main-container {
+  display: flex;
+  background-color: #8e9775;
+  width: 40%;
+  margin: auto;
+  height: 60%;
+  flex-direction: column;
+  margin-top: 3%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+  border: solid black 4px;
+}
+
+.test-main-img-box {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+
+.test-main-img {
+  margin-top: 5%;
+  width: 60%;
+  height: 90%;
+  background-color: #faf2da;
+  color: #4a503d;
+}
+
+.test-main-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.test-btn {
+  background-color: #87ceeb;
+  padding: 12px 30px;
+  margin: 0px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 3px;
+}
+
+.test-btn:hover {
+  background-color: #4169e1;
+  color: white;
+}
+
+.test-main-text-box {
+  display: flex;
+  height: 25%;
+  background-color: #faf2da;
+  justify-content: center;
+  color: #4a503d;
+}
+
+.test_btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-main-text-box {
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 3% 3%;
+  margin: 3% 5%;
+}
+
+@media (max-width: 700px) {
+  .test-main-container {
+    width: 80%;
+    height: 55%;
+  }
+  .test-main-img {
+    margin: 5% 5%;
+    width: 78%;
+  }
+  .test-main-img img {
+    height: 100%;
+  }
+  .test-btn {
+    padding: 8px 18px !important;
+    margin: 0px;
+  }
+  .test-main-text-box {
+    font-size: 0.8rem;
+  }
+  .btn-box {
+    margin-top: 8%;
+  }
+}
+
+/* 테스트 시작페이지 끝 */
+
+/*동영상 리스트 상세페이지  */
+.video-container {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+}
+
+.video-box {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 70%;
+  padding-bottom: 30%;
+}
+
+.video-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#video {
+  position: absolute;
+  width: 100%; /* 부모에 맞게 꽉 채운다. */
+  height: 100%;
+}
+
+.back-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 18%;
+  padding-bottom: 1%;
+}
+
+.back-button a {
+  width: 7%;
+  height: 7%;
+}
+
+@media (max-width: 820px) {
+  .video-container {
+    justify-content: center;
+    height: 55%;
+  }
+  .video-box {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 50%;
+  }
+  .video-box iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .back-button a {
+    width: 20%;
+    height: 20%;
+  }
+  .back-button {
+    padding-right: 6%;
+  }
+}
+
+/*동영상 리스트 상세페이지 끝*/
+
+/* 지도 페이지 */
+.map-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.map-box {
+  width: 75%;
+  height: 97%;
+  position: relative;
+}
+
+.map-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.map-button-box {
+  margin-top: 13%;
+  position: absolute;
+  width: 60%;
+  height: 70%;
+}
+
+.map-button-box a {
+  display: block;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: solid black 3px;
+}
+
+.map-button-box a:hover {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.map-button-box a:nth-child(1) {
+  margin-left: 20%;
+  height: 10%;
+  width: 10%;
+  background-color: #81daf5;
+}
+
+.map-button-box a:nth-child(2) {
+  margin-left: 30%;
+  height: 10%;
+  width: 10%;
+  background-color: #81f781;
+}
+
+.map-button-box a:nth-child(3) {
+  margin-top: 2%;
+  margin-left: 56%;
+  height: 10%;
+  width: 10%;
+  background-color: #ffbf00;
+}
+
+.map-button-box a:nth-child(4) {
+  margin-left: 42%;
+  height: 10%;
+  width: 10%;
+  background-color: #fa5858;
+}
+
+.map-button-box a:nth-child(5) {
+  margin-top: 27%;
+  margin-left: 80%;
+  height: 10%;
+  width: 10%;
+  background-color: #ffff00;
+}
+
+.map-title-box {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-title-box span {
+  font-size: 2.1rem;
+}
+
+.map-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 4%;
+  margin-top: 3%;
+  margin-left: 20%;
+  margin-right: 2%;
+  height: 70%;
+  width: 74%;
+  background-color: #faf2da;
+  border: solid black 10px;
+  color: black;
+  border-radius: 20px;
+  height: 70%;
+  margin-top: 3%;
+}
+
+.map-body-container {
+  display: flex;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+
+.map-next-button-box {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  padding-top: 35%;
+}
+
+.map-next-button-box div {
+  position: absolute;
+}
+
+.map-next-button-box div:nth-child(1) {
+  height: 38%;
+  width: 60%;
+}
+
+.map-next-button-box div:nth-child(2) {
+  margin-top: 10%;
+  margin-left: 55%;
+  height: 35%;
+  width: 55%;
+}
+
+@media (max-width: 820px) {
+  .map-body-container {
+    margin-top: 5%;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+  }
+  .map-next-button-box {
+    margin-left: 30%;
+    padding-top: 10%;
+    height: 40% !important;
+    padding-top: 15%;
+  }
+  .map-body {
+    height: 40%;
+    width: 100%;
+    margin: 0;
+  }
+  .map-title-box span {
+    font-size: 1.4rem;
+  }
+  .map-box {
+    height: 93%;
+    width: 90%;
+  }
+  .map-title-box {
+    align-items: stretch !important;
+  }
+  .map-next-button-box div:nth-child(1) {
+    height: 73%;
+    width: 70%;
+  }
+  .map-next-button-box div:nth-child(2) {
+    margin-left: 65%;
+    height: 100%;
+    width: 100%;
+  }
+  .map-button-box a {
+    height: 15% !important;
+    width: 15% !important;
+  }
+}
+/* 지도 페이지 끝*/
+
+/*지도 상세페이지  */
+.interview-container {
+  display: flex;
+  color: black;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.interview-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 55%;
+  width: 45%;
+  background-color: #faf2da;
+  border-radius: 10px;
+  border: solid black 10px;
+}
+
+.profile-text {
+  font-size: 1.6rem;
+  margin-top: 4%;
+}
+
+.profile-img {
+  margin-top: 3%;
+  height: 28%;
+  width: 25%;
+  text-align: center;
+}
+
+.profile-img img {
+  border-radius: 30%;
+}
+
+.interview-content {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 82%;
+  margin-top: 2%;
+  font-size: 1.2rem;
+}
+
+.q {
+  margin-bottom: 2%;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 820px) {
+  .interview-box {
+    height: 45%;
+    width: 85%;
+    border: solid black 7px;
+  }
+  .profile-img {
+    height: 28%;
+    width: 45%;
+    margin-top: 5%;
+  }
+  .profile-text {
+    margin-top: 8%;
+    font-size: 0.9rem;
+  }
+  .q {
+    font-size: 1.2rem;
+  }
+  .a {
+    font-size: 0.9rem;
+  }
+  .interview-content {
+    width: 87%;
+  }
+}
+
+/*지도 상세페이지 끝 */
+
+/* 마지막 페이지 시작 */
+.lastpage-body-container {
+  display: flex;
+  background-color: #faf2da;
+  height: 70%;
+  width: 45%;
+  border: solid black 10px;
+  border-radius: 20px;
+  margin: auto;
+  margin: 1% auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.lastpage-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.lastpage-text-box span {
+  color: black;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.lastpage-img-box {
+  height: 28%;
+  width: 65%;
+  margin: 8% auto;
+}
+
+.quiz-link {
+  margin: 4% auto;
+  width: 30%;
+  background-color: #d0c778;
+  padding: 3px 3px;
+  border-radius: 10px;
+  border: solid black 3px;
+}
+
+.quiz-link:hover {
+  background-color: #ffff80;
+}
+
+@media (max-width: 820px) {
+  .lastpage-body-container {
+    width: 87%;
+    height: 55%;
+    padding: 3%;
+  }
+  .lastpage-text-box span {
+    font-size: 1.2rem;
+  }
+  .lastpage-img-box {
+    height: 23%;
+    margin: 10% auto;
+  }
+  .lastpage-img-box img {
+    width: 100%;
+    height: 80%;
+  }
+  .quiz-link {
+    width: 55%;
+    margin-top: 10%;
+    padding: 8px 8px;
+  }
+}
+/* 마지막 페이지 끝 */
