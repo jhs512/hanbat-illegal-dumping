@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+html > body {
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.bg-color-2 {
+  background-color: #fdeca6;
+}
+
+.site-wrap > main {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.site-wrap > main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .site-wrap > main {
+    background-size: 900px auto;
+  }
+}
+
+.text-color-1 {
+  color: #f1d4d8;
+}
+
+.ani-moving-1 {
+  position: relative;
+  animation: ani-moving-1 2s linear infinite;
+}
+
+@keyframes ani-moving-1 {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.top-bar .logo {
+  background-size: 130% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 320px;
+}
+
+.top-bar .logo::after {
+  content: "";
+  display: block;
+  padding-top: 20%;
+}
+
+@media (max-width: 767px) {
+  .top-bar .logo {
+    width: 40px;
+    background-size: 390% auto;
+    background-position: 17% 50%;
+  }
+
+  .top-bar .logo::after {
+    padding-top: 60%;
+  }
+}
+
+.top-bar .logo-2 {
+  background-size: 260% auto;
+  background-position: 53% 47.5%;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+.top-bar .logo-2::after {
+  content: "";
+  display: block;
+  padding-top: 25%;
+}
+
+@media (max-width: 767px) {
+  .top-bar .logo-2 {
+    width: 70px;
+  }
+}
+
+.youtube-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10000;
+  display: none;
+}
+
+.youtube-modal > iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.youtube-modal .btn-close {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
