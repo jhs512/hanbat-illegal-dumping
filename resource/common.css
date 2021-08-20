@@ -131,3 +131,17 @@ html > body {
   justify-content: center;
   border-radius: 50%;
 }
+
+.youtube-thumb-img {
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.youtube-thumb-img::after {
+  content: "";
+  display: block;
+  padding-top: calc(100% / 16 * 9);
+}
