@@ -26,6 +26,7 @@ $questions[] = '나는 이별을 한 직후 그냥 큰 봉지에 전 애인이 �
 $maxQuestionsNo = count($questions);
 ?>
 <?php require_once "head.php" ?>
+ 
 <section class="section-quizProcess-1 flex items-center justify-center min-h-screen">
   <div class="border-4 m-4 p-4 rounded-3xl max-w-2xl bg-color-2 overflow-hidden">
     <div class="question-box">
@@ -77,7 +78,7 @@ $maxQuestionsNo = count($questions);
             <h1>질문 <?= $no ?></h1>
             <div><?= $question ?></div>
 
-            <div>
+            <div class="text-center my-5">
               <label>
                 <input type="radio" name="q<?= $no ?>" value="Y" />
                 <span>예</span>
@@ -88,9 +89,9 @@ $maxQuestionsNo = count($questions);
               </label>
             </div>
 
-            <div>
+            <div class="text-center my-1">
               <?php if ($no < $maxQuestionsNo) { ?>
-                <button onclick="QuizForm__next(this)" type="button" class="btn btn-primary">다음</button>
+                <button onclick="QuizForm__next(this)" type="button" class="btn btn-primary bg-red-400">다음</button>
               <?php } else { ?>
                 <button onclick="QuizForm__complete(this)" type="button" class="btn btn-primary">완료</button>
               <?php } ?>

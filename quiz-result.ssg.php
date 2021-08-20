@@ -36,24 +36,24 @@ $resultsScores = [
 <?php require_once "head.php" ?>
 <section class="section-quizProcess-1 flex items-center justify-center min-h-screen">
   <div class="border-4 m-4 p-4 rounded-3xl max-w-2xl bg-color-2 overflow-hidden">
-    <div class="result-box">
+    <div class="result-box text-center">
       <?php foreach ($resultsScores as $resultsScore =>
         $resultCode) { ?>
-        <div class="result-<?= $resultsScore ?> hidden">
-          <h1>
+        <div class="result-<?= $resultsScore ?> hidden text-xl">
+          <h1 class="text-3xl">
             <?= $results[$resultCode][0] ?>
           </h1>
-          <div>
+          <div >
             <img src="<?= $results[$resultCode][1] ?>" alt="" />
           </div>
-          <div>
+          <div class="text-lg mt-4 mb-4">
             <?= $results[$resultCode][2] ?>
           </div>
         </div>
       <?php } ?>
-      <div>
-        <a href="quiz-process.ssg.php" class="btn btn-secondary">다시하기</a>
-        <a href="movie-list.ssg.php" class="btn btn-primary">동영상 리스트</a>
+      <div class="text-center">
+        <a href="quiz-process.ssg.php" class="btn btn-secondary">다시하기!</a>
+        <a href="movie-list.ssg.php" class="btn btn-primary">다음으로 가기!</a>
       </div>
     </div>
     <script>
