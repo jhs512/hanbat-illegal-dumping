@@ -60,7 +60,7 @@
       </div>
 
       <div class="mt-8 text-center">
-        <a href="last-page.php" class="btn btn-primary">다음으로 가기!</a>
+        <a href="last-page.ssg.php" class="btn btn-primary">다음으로 가기!</a>
       </div>
     </div>
   </div>
