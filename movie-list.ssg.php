@@ -16,11 +16,11 @@ $youtubeVideoCodes = [
     <div>
       <?php foreach ($youtubeVideoCodes as $youtubeVideoCode) { ?>
         <div>
-          <img onclick="showYoutube('<?= $youtubeVideoCode ?>');"   src="http://img.youtube.com/vi/<?= $youtubeVideoCode ?>/0.jpg" />
+          <img onclick="showYoutube('<?= $youtubeVideoCode ?>');" src="http://img.youtube.com/vi/<?= $youtubeVideoCode ?>/0.jpg" />
         </div>
       <?php } ?>
       <div class="mt-4 text-center">
-        <a href="interview-map.php" class="btn btn-primary">다음으로 가기!</a>
+        <a href="interview-map.ssg.php" class="btn btn-primary">다음으로 가기!</a>
       </div>
     </div>
     <script>
