@@ -18,11 +18,11 @@
 
           <!--지도와 연결된 링크(상인분들 이야기페이지로 이동)-->
 
-          <a class="h-6 w-6 bg-yellow-400 block rounded-2xl border-4 ml-10 mt-16  absolute" href="interview-map-detail3.ssg.php"></a>
-          <a class="h-6 w-6 bg-red-400 block rounded-2xl border-4 ml-24 mt-28 absolute" href="interview-map-detail5.ssg.php"></a> 
-          <a class="h-6 w-6 bg-green-500 block rounded-2xl border-4 ml-24 mt-36 absolute" href="interview-map-detail1.ssg.php"></a>
-          <a class="h-6 w-6 bg-purple-500 block rounded-2xl border-4 ml-32  mt-32 absolute" href="interview-map-detail2.ssg.php"></a>     
-          <a class="h-6 w-6 bg-blue-400 block rounded-2xl border-4 ml-40 mt-56" href="interview-map-detail4.ssg.php"></a>
+          <a onclick="saveVisitLog2('visit_log2')" class="h-6 w-6 bg-yellow-400 block rounded-2xl border-4 ml-10 mt-16  absolute" href="interview-map-detail3.ssg.php"></a>
+          <a onclick="saveVisitLog2('visit_log2')"  class="h-6 w-6 bg-red-400 block rounded-2xl border-4 ml-24 mt-28 absolute" href="interview-map-detail5.ssg.php"></a> 
+          <a onclick="saveVisitLog2('visit_log2')"  class="h-6 w-6 bg-green-500 block rounded-2xl border-4 ml-24 mt-36 absolute" href="interview-map-detail1.ssg.php"></a>
+          <a onclick="saveVisitLog2('visit_log2')"  class="h-6 w-6 bg-purple-500 block rounded-2xl border-4 ml-32  mt-32 absolute" href="interview-map-detail2.ssg.php"></a>     
+          <a onclick="saveVisitLog2('visit_log2')"  class="h-6 w-6 bg-blue-400 block rounded-2xl border-4 ml-40 mt-56" href="interview-map-detail4.ssg.php"></a>
 
           
           <!-- pc 화면 -->
@@ -53,7 +53,7 @@
       </div>
 
       <div class="mt-8 text-center">
-        <a href="last-page.ssg.php" class="btn btn-primary">다음으로 가기!</a>
+        <a href="last-page.ssg.php" class="btn btn-primary btn-go-last-page2">다음으로 가기!</a>
       </div>
     </div>
   </div>
