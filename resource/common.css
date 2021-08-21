@@ -137,7 +137,10 @@ html > body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px;
+  border: solid black 5px;
+  border-bottom: solid black 30px;
+  border-top: solid black 30px;
+  border-radius: 10px;
 }
 
 .youtube-thumb-img::after {

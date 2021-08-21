@@ -11,6 +11,3 @@
       <span><img class="w-20 sm:w-48 block" src="<?= $imgUrlStarts ?>s8DAoj.png" alt=""></span>
       <a href="quiz.ssg.php"><img class="w-20 sm:w-48 ani-moving-1 block" src="<?= $imgUrlStarts ?>k73IGz.png" alt=""></a>
     </div>
-  </div>
-</section>
-<?php require_once "foot.php" ?>
