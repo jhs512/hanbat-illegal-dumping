@@ -5,8 +5,9 @@
     <div>
       <div class="mt-4 mx-2 sm:mx-10 text-center bg-white rounded-3xl p-2 text-1xl ">
         <div class="">
-          <span>지도에 보이는 점을 클릭해서</span></br>
-          <span> 학교주변 상인분들의 이야기를 들어보세요! </span>
+        
+          <span>지도에 보이는 점을 클릭해서 </span><i class="far fa-hand-pointer"></i></br>
+          <span> 학교주변 상인분들의 이야기를 들어보세요! </span><i class="fas fa-assistive-listening-systems"></i>
         </div>
 
 
