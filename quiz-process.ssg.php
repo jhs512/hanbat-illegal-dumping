@@ -84,8 +84,8 @@ $maxQuestionsNo = count($questions);
                 <span>예</span>
               </label>
               <label>
-                <input type="radio" name="q<?= $no ?>" value="N" />
-                <span>아니오</span>
+                <input class="ml-2" type="radio" name="q<?= $no ?>" value="N" />
+                <span >아니오</span>
               </label>
             </div>
 
