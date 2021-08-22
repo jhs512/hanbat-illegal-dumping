@@ -148,3 +148,7 @@ html > body {
   display: block;
   padding-top: calc(100% / 16 * 9);
 }
+
+.border {
+  border: dashed #6f4c5b 5px;
+}

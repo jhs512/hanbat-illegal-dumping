@@ -3,7 +3,7 @@
 <section class="section-quiz-1 flex items-center justify-center min-h-screen">
   <div class="border-4 m-4 p-4 rounded-3xl max-w-2xl bg-color-2 overflow-hidden map-box  ">
     <div>
-      <div class="mt-4 mx-2 sm:mx-10 text-center bg-white rounded-3xl p-2 text-1xl ">
+      <div class="mt-4 mx-2 sm:mx-10 text-center bg-white rounded-3xl p-1 py-4 text-1xl border bg-white rounded-3xl ">
         <div class="">
         
           <span>지도에 보이는 점을 클릭해서 </span><i class="far fa-hand-pointer"></i></br>

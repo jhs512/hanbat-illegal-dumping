@@ -38,11 +38,9 @@ function saveVisitLog2(pageName) {
 function btnGoLastButtonVisible2() {
   const keys = "visit_log2";
 
- 
-    if (localStorage.getItem(keys) !== "true") {
-      return false;
-    }
-  
+  if (localStorage.getItem(keys) !== "true") {
+    return false;
+  }
 
   return true;
 }
@@ -50,7 +48,7 @@ function btnGoLastButtonVisible2() {
 function Page__init2() {
   $(".btn-go-last-page2").click(function () {
     if (!btnGoLastButtonVisible2()) {
-      alert("상인 분들의 이야기를 들어주세요!");
+      alert("상인분들의 이야기를 들어주세요!");
       return false;
     }
   });
