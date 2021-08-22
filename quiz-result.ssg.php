@@ -3,25 +3,25 @@
 $results = [];
 
 $results[] = [
-  '마카롱',
+  '"마카롱"',
   $imgUrlStarts . 'DeolTF.jpg',
   '당신은 정확한 요리법에 따라 만들어야 하는 마카롱처럼 올바른 쓰레기 배출법에 따라 열심히 분리수거 해주고 있는 사람이군요! <i class="far fa-kiss-wink-heart"></i>',
 ];
 
 $results[] = [
-  '감초',
+  '"감초"',
   $imgUrlStarts . 'lJ61OK.jpg',
   '당신은 어디에든 빠지지 않는 감초처럼 쓰레기 배출법을 지키려고 노력하지만 귀찮은 일은 안 하는 대다수의 사람이군요! <i class="far fa-kiss-beam"></i>',
 ];
 
 $results[] = [
-  '마라탕',
+  '"마라탕"',
   $imgUrlStarts . 'KGGthm.jpg',
   '당신은 온갖 재료를 넣어 먹는 마라탕처럼 쓰레기도 온갖 종류를 넣어 혼합배출하는 사람이군요! <i class="far fa-grin-beam-sweat"></i>',
 ];
 
 $results[] = [
-  '부먹',
+  '"부먹 탕수육"',
   $imgUrlStarts . 'MJJcIU.jpg',
   '당신은 다른 사람의 의견을 무시하고 소스를 부어버리는 부먹 탕수육처럼 쓰레기를 어떻게 배출하든 관심이 없는 사람이군요! <i class="far fa-sad-cry"></i>',
 ];
@@ -39,14 +39,14 @@ $resultsScores = [
     <div class="result-box text-center">
       <?php foreach ($resultsScores as $resultsScore =>
         $resultCode) { ?>
-        <div class="result-<?= $resultsScore ?> hidden text-xl">
-          <h1 class="text-3xl">
+        <div class="result-<?= $resultsScore ?> hidden text-xl ">
+          <h1 class="text-3xl my-4">
             <?= $results[$resultCode][0] ?>
           </h1>
           <div >
             <img src="<?= $results[$resultCode][1] ?>" alt="" />
           </div>
-          <div class="text-base mt-4 mb-4 border bg-white rounded-3xl p-4 ">
+          <div class="text-base my-6 border bg-white rounded-3xl p-4 ">
             <?= $results[$resultCode][2] ?>
           </div>
         </div>
